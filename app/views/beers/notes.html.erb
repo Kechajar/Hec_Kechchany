@@ -1,0 +1,23 @@
+<h1>Listing beer's notes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Note</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @beers.each do |beer| %>
+      <tr>
+        <td><%= beer.name %></td>
+        <td><%= beer.note %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
